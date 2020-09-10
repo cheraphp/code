@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="description" content="Astarius Code Discord sunucusu kod paylaşım merkezi">
+    <meta name="keywords" content="kod, discord, bot, discord.js, copy, paste, copy paste, hazır kod, bot kodları">
+    <meta name="copyright" content="Astarius Code 2020">
+    <meta name="author" content="Astarius Code">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/gerekli.css">
+  </head>
+  <body class="bg-light text-white">
+     <style>
+
+      html, body {
+
+          background-color:#fff !important;
+
+          background: url(https://cdn.discordapp.com/attachments/636915676665217035/733725416266924123/inspiration-geometry.png) repeat 0 0;
+
+          max-width: 100%;
+
+          overflow-x: hidden;
+
+          -webkit-animation: slide 20s linear infinite;
+
+      }
+
+      body::-webkit-scrollbar {
+
+          width: 0.6em;
+
+      }
+
+      body::-webkit-scrollbar-track {
+
+          -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+
+      }
+
+      body::-webkit-scrollbar-thumb {
+
+        background-color: #FF0F00;
+
+        outline: 1px solid #fff;
+
+      }
+
+      a{
+
+        text-decoration:none !important;
+
+      }
+
+      @-webkit-keyframes slide {
+
+    from { background-position: 0 0; }
+
+    to { background-position: 0 -400px; }
+
+}
+
+    </style>
+
+    
+
+    
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav" style="background-color: #000;">
+      <a class="navbar-brand" href="/"><!--img style="border-radius:50%" width="30" height="30"-->
+        <img src="https://i.hizliresim.com/BrwQUk.png" style="border-radius:50%" width="60" height="60" alt="">
+        Astarius Code
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #fff">
+              Kodlar
+            </a>
+            <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item font-weight-bold" href="/javascript" style="color: #fff;">Javascript</a>
+              <a class="dropdown-item font-weight-bold" href="/html" style="color: #fff;">Html</a>
+              <a class="dropdown-item font-weight-bold" href="/altyapi" style= "color: #fff;">Altyapı</a>
+              <a class="dropdown-item font-weight-bold" href="/premium" style="color: #fff">Premium</a>
+              <div class="dropdown-divider" style="border-top:1px solid #fff"></div>
+              <a class="dropdown-item font-weight-bold" href="/topluluk" style="color: #fff">Sizden gelenler</a>
+            </div>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="/davet" style="color: #fff" >Discord</a>
+          </li>
+          
+          
+           <a class="nav-link" href="/paylas"style="color: #fff" >Kod Paylaş</a>
+          
+          
+        </ul>
+        {{#if user}}
+        
+          <div class="dropdown">
+            <a class="btn btn-outline-warning nav-link text-uppercase" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{user.username}} <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="/profil/{{user.id}}"style="color: #fff" >Profil</a>
+              <div class="dropdown-divider"></div>
+              <a class="badge badge-danger" href="/cikis"><i class="fas fa-sign-out-alt"> Çıkış Yap</i></a>
+            </div>
+          </div>
+
+        
+        {{else}}
+        <a class="badge badge-success" href="/giris"><i class="fas fa-sign-in-alt"> Giriş Yap</i></a>
+        {{/if}}
+      </div>
+    </nav>
+    
+    
+    {{{body}}}
+    <br><br><br>
+    
+    <style>
+  .footer{background:#000;width:100%;text-align:center;padding:2rem 0;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.footer .material-design-icon,.footer .material-design-icon>.material-design-icon__svg{width:1.5em;height:1.5em;bottom:0}.footer__row{display:-webkit-box;color: white;display:flex;-webkit-box-pack:center;justify-content:center}.footer__links{margin-top:.5rem}.footer__link{color:#a9afc5;text-decoration:none;padding:.2rem;-webkit-transition:color .2s ease-out;transition:color .2s ease-out}.footer__link:hover{color:#606b8e}.footer__link+.footer__link{margin-left:1ch}</style>
+  </style>
+  <footer class="footer">
+    <img src="https://i.hizliresim.com/BrwQUk.png" style="width: 120px">
+    <h1 style="color: white">
+  Astarius Code
+    </h1>
+    <br>   <br>
+    <div class="footer__row">©2020-2021 Astarius Code | All right reserved. </div>
+  <br>  <div class="footer__row">Powered by</div><div class="footer__row"><a href="https://voiddevelopment.com">Void Development</a></div>
+  </div></footer></div></div></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u){return {layout:"searchless-nav",data:[{bots:[{userId:h,clientId:h,username:"DTel",discriminator:"6675",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F377609965554237453\u002Fada31ec8b4aa1ca6ff3454314e496300.jpg?size=128",coOwners:[],prefix:"\u003E",helpCommand:i,libraryName:f,website:"https:\u002F\u002Fdtel.austinhuang.me",supportInvite:"https:\u002F\u002Fdiscord.gg\u002FRN7pxrB",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Foauth2\u002Fauthorize?client_id=377609965554237453&scope=bot&permissions=125953",shortDescription:"DTel is a realistic telephone bot that lets you call other servers!",openSource:"https:\u002F\u002Fgithub.com\u002Faustinhuang0131\u002Fdtel",shardCount:e,guildCount:3905,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"The Double-Eyed Bus",discriminator:"6889",userId:"207484517898780672"},addedDate:"2019-09-22T19:02:48.935Z",status:d},{userId:j,clientId:j,username:"Ensō~Chan",discriminator:"9741",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F716701699145728094\u002Fb205bc38a0066f556e8a1e91416a384d.jpg?size=128",coOwners:[],prefix:".",helpCommand:".help",libraryName:k,website:b,supportInvite:"https:\u002F\u002Fdiscord.gg\u002FSZ5nexg",botInvite:"https:\u002F\u002Fdiscord.com\u002Fapi\u002Foauth2\u002Fauthorize?client_id=716701699145728094&permissions=1543892087&scope=bot",shortDescription:"Ensō~Chan is a multi-purpose bot focused on catering to the anime community! You can look at Waifus\u002FHusbandos\u002FAiring Anime! Log Events\u002FSend Mail To Staff! And much much more!",openSource:"https:\u002F\u002Fgithub.com\u002Fsgoudham\u002FEnso-Bot",shardCount:e,guildCount:161,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"Hamothy",discriminator:"5619",userId:"154840866496839680"},addedDate:"2020-07-24T22:50:06.374Z",status:d},{userId:l,clientId:l,username:"Bastion",discriminator:"7776",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F267035345537728512\u002Ff2be54a6b3bc34a5b849fdeb2e550d68.jpg?size=128",coOwners:[],prefix:"#!",helpCommand:"#!help",libraryName:"Custom Library",website:"https:\u002F\u002Fbastion.traction.one",supportInvite:"https:\u002F\u002Fdiscord.gg\u002Ffzx8fkt",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Foauth2\u002Fauthorize?client_id=267035345537728512&scope=bot&permissions=8",shortDescription:"A multi purpose Discord bot with tons of features. Add Bastion to your server and enhance your Discord experience!",openSource:"https:\u002F\u002Fgithub.com\u002FTheBastionBot",shardCount:4,guildCount:3845,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"k3rn31p4nic",discriminator:"8383",userId:"266290969974931457"},addedDate:"2017-02-27T20:46:09.000Z",status:d},{userId:m,clientId:m,username:"Helio",discriminator:"9128",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F625669590566830080\u002F6c79da728512cff7c77fee828a03b109.jpg?size=128",coOwners:[{username:"MrLetsplay",discriminator:"6865",userId:"244432942883930112"}],prefix:"h- (customizable)",helpCommand:"h-help",libraryName:"JDA",website:"https:\u002F\u002Fgraphite-official.com\u002F",supportInvite:"https:\u002F\u002Fdiscord.me\u002Fgraphiteofficial",botInvite:"https:\u002F\u002Fdiscord.com\u002Foauth2\u002Fauthorize?client_id=625669590566830080&scope=bot&permissions=8",shortDescription:"Helio allows you to create easy backups of your guild, including channels, chat history, guild name & icon etc. so you can revert back to an older save at any time if you feel like it",openSource:b,shardCount:e,guildCount:105,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"Pascal",discriminator:"2620",userId:"195856390160384000"},addedDate:"2020-01-15T05:09:37.302Z",status:d},{userId:n,clientId:n,username:"Van",discriminator:"8124",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F364399994242859008\u002F742a3aa2be5c83eaf4793f8ccf5d229e.jpg?size=128",coOwners:[],prefix:"v!",helpCommand:"v!help",libraryName:f,website:"https:\u002F\u002Fvanme.me",supportInvite:"https:\u002F\u002Fdiscord.gg\u002Fbabd4WW",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Foauth2\u002Fauthorize?client_id=364399994242859008&scope=bot&permissions=8",shortDescription:"Van is an easy to use multi-purpose Discord bot with a currency system, robbing system, leveling system and more!",openSource:b,shardCount:e,guildCount:323,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"Vanished",discriminator:"2555",userId:"267025484028706816"},addedDate:"2020-06-20T09:48:09.824Z",status:d},{userId:o,clientId:o,username:"Neko chxn",discriminator:"5222",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F734752450984280086\u002F31f99c1ff9adcd68bc34bdadaf0efa5e.jpg?size=128",coOwners:[],prefix:"\u003E \u002F customizable",helpCommand:i,libraryName:f,website:"https:\u002F\u002Fneko-chxn.xyz",supportInvite:"https:\u002F\u002Fdiscord.gg\u002FAqcvkgM",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Foauth2\u002Fauthorize?client_id=734752450984280086&scope=bot&permissions=2124870",shortDescription:"Neko chxn a little music, roleplay and Fun bot whit many of features.",openSource:b,shardCount:e,guildCount:138,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"Neko-chxn",discriminator:g,userId:"715954828182028438"},addedDate:"2020-07-26T10:59:22.993Z",status:d},{userId:p,clientId:p,username:"Null",discriminator:"2671",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F734192520996716556\u002F3b38bf8c9f0c5bb5e7fac383d1be5b38.jpg?size=128",coOwners:[],prefix:"?",helpCommand:"?help",libraryName:f,website:b,supportInvite:"https:\u002F\u002Fdiscord.gg\u002FEzecfUX",botInvite:"https:\u002F\u002Fdiscord.com\u002Foauth2\u002Fauthorize?client_id=734192520996716556&scope=bot&permissions=2146958847",shortDescription:"The only discord bot you'll ever need. This discord bot contains everything needed to grow a server. Music, Moderation, Leveling (coming soon), and Games.",openSource:b,shardCount:e,guildCount:51,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"Hackermon",discriminator:g,userId:"714544278478520331"},addedDate:"2020-07-25T15:16:07.804Z",status:d},{userId:q,clientId:q,username:"Highlight",discriminator:"9645",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F503832536229609472\u002Fff894bbb144db85362e565c10d0be6f7.jpg?size=128",coOwners:[],prefix:"@Highlight",helpCommand:"@Highlight help",libraryName:k,website:b,supportInvite:"https:\u002F\u002Fdiscord.gg\u002FQrggZWR",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Foauth2\u002Fauthorize?client_id=503832536229609472&scope=bot&permissions=347200",shortDescription:"DMs you when your configured words are said in chat",openSource:"https:\u002F\u002Fgithub.com\u002Fiomintz\u002Fhighlight-bot",shardCount:e,guildCount:386,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"lambda",discriminator:"0987",userId:"140516693242937345"},addedDate:"2018-12-18T09:32:56.252Z",status:d},{userId:r,clientId:r,username:"Minecraft",discriminator:"3041",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F346346285953056770\u002F2d45a8ab007e8504ccf33536448aaeab.jpg?size=128",coOwners:[],prefix:"mc\u002F",helpCommand:"mc\u002Fhelp",libraryName:"Discord.Net",website:"https:\u002F\u002Ffluxpoint.dev",supportInvite:"https:\u002F\u002Fdiscord.gg\u002FTjF6QDC",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Fapi\u002Foauth2\u002Fauthorize?client_id=346346285953056770&permissions=0&redirect_uri=https%3A%2F%2Ffluxpoint.dev%2Fredirect&response_type=code&scope=identify%20bot",shortDescription:"A Minecraft bot for Discord with lots of commands such as player skins, name history.",openSource:b,shardCount:e,guildCount:9543,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"Builderb",discriminator:g,userId:"190590364871032834"},addedDate:"2017-08-15T01:42:39.000Z",status:"dnd"},{userId:s,clientId:s,username:"KarmaBot v3",discriminator:"3382",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F255110583072980992\u002F23e8a363b6464117a65a11dbb32b1dd9.jpg?size=128",coOwners:[],prefix:"\u003Ek",helpCommand:"@KarmaBot",libraryName:f,website:"https:\u002F\u002Fkarmabot.vlexar.pw",supportInvite:"https:\u002F\u002Fdiscord.gg\u002FDVEa8gJ",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Foauth2\u002Fauthorize?client_id=255110583072980992&scope=bot&permissions=201673792",shortDescription:"A simple, lightweight & adaptive utility to award positive or negative \"Karma\" to any user\u002Fkeyword.",openSource:"https:\u002F\u002Fgithub.com\u002Fshikhir-arora\u002Fkarma-simple",shardCount:e,guildCount:1161,verified:a,online:a,inGuild:a,deleted:c,owner:{username:".vlexar",discriminator:g,userId:"243902693666455553"},addedDate:"2017-09-07T03:14:01.000Z",status:d},{userId:t,clientId:t,username:"Naval Nuclear LAB",discriminator:"6249",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F695599975437959191\u002F392391e3893cfff8e4f2892e761eb660.jpg?size=128",coOwners:[],prefix:"nav.",helpCommand:"nav.help",libraryName:f,website:"https:\u002F\u002Fnaval-nuclear-lab.herokuapp.com\u002F",supportInvite:"https:\u002F\u002Fdiscord.gg\u002FZNXmwAR",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Foauth2\u002Fauthorize?client_id=695599975437959191&scope=bot&permissions=523328",shortDescription:"Discovery and play as Scientist, personalize your Discord as a Nuclear LAB. Nuclear search engine | Fun | NSFW BOT | R18",openSource:b,shardCount:3,guildCount:142,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"tomokaTakeda",discriminator:"3749",userId:"598943183556313109"},addedDate:"2020-06-24T05:28:17.882Z",status:d},{userId:u,clientId:u,username:"Rainbow Six",discriminator:"1391",avatarURL:"https:\u002F\u002Fcdn.discordapp.com\u002Favatars\u002F567877769682485270\u002Fcb7f18fac7292ebc04407a552be51e27.jpg?size=128",coOwners:[],prefix:"-",helpCommand:"-help",libraryName:"Eris",website:"https:\u002F\u002Fserames.me\u002Fr6",supportInvite:"https:\u002F\u002Fdiscord.gg\u002F9SJSavs",botInvite:"https:\u002F\u002Fdiscordapp.com\u002Fapi\u002Foauth2\u002Fauthorize?client_id=567877769682485270&permissions=378945&scope=bot",shortDescription:"A bot dedicated to giving new Rainbow Six: Siege players an easy way to learn weapons, operators, and maps from Rainbow Six: Siege",openSource:b,shardCount:e,guildCount:1281,verified:a,online:a,inGuild:a,deleted:c,owner:{username:"Ser Ames",discriminator:"0959",userId:"366456097839644672"},addedDate:"2019-09-20T11:46:31.731Z",status:d}]}],error:b,state:{auth:{token:b,user:b},cache:{libraries:[],librariesTimestamp:0}},serverRendered:a}}(true,null,false,"online",1,"discord.js","0001","377609965554237453","\u003Ehelp","716701699145728094","discord.py","267035345537728512","625669590566830080","364399994242859008","734752450984280086","734192520996716556","503832536229609472","346346285953056770","255110583072980992","695599975437959191","567877769682485270"));</script><script src="/_nuxt/ad8b1e133ec306c80646.js" defer></script><script src="/_nuxt/cc5d8ffa36631c8c99fc.js" defer></script><script src="/_nuxt/bb77deedebab7350915c.js" defer></script><script src="/_nuxt/1b9ea01b09b7c483d9f9.js" defer></script><script src="/_nuxt/35d77fef96211a7f120c.js" defer></script><script src="/_nuxt/62d201d9b2998295868c.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

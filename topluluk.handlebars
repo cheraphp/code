@@ -1,0 +1,62 @@
+<style>
+.avatar {
+  border-radius: 5% !important;  
+  border: 2px solid white;
+  padding: 1px;
+}
+#avatar2 {
+    width: 200px;
+    height: 200px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    text-align:center;
+}
+    #avatar2:hover {
+        transform: translate(0px,-20px);
+        -webkit-transform: translate(0px,-20px);
+	}
+  </style>
+
+<br><br>
+  <h1 class="text-center text-light font-weight-bolder">
+    Sizin Kodlarınız
+  </h1>
+  <h5 class="text-center text-light font-weight-light">
+  </h5>
+<hr>
+
+<div class="container">
+  <input id="search" type="text" class="form-control" placeholder="Kod Ara" aria-label="Kod Ara" aria-describedby="basic-addon2">
+</div><br>
+
+<div style="margin-left: 0.1rem; margin-right: 0.1rem;" class="row row-cols-1 row-cols-md-4">
+
+  {{#each kodlar}}
+  <div class="col mb-1">
+  <div class="kutucuk" style="max-width: 18rem;">
+  <div class="card-header"><center><img src="{{this.icon}}" alt="avatar" style="border-width: 1rem; border: solid;border-radius: 50%; max-width: 100%; height: 2.5rem;"></center> <h9></br><b><center>{{this.k_adi}}</center></b></h9></div>
+  <div class="card-body">
+    <h9><b>Kod Adı:</b> {{this.isim}}</h9>
+   <br><h9><b>Açıklama:</b> {{this.desc}}</h9>
+   <br><strong><h9>Tarih:</h9></strong><span class="badge badge-dark">{{this.date}}</span>
+    <br><strong><h9>Modüller:</h9></strong><span class="badge badge-dark">{{#each this.modules}}</span> <span class="badge badge-dark">{{this}}{{/each}}</span>
+<br><br><a class="btn btn-outline-dark nav-link text-uppercase" href="/topluluk/{{this.id}}"> <b>Görüntüle</b></a>
+    
+    </center>
+  </div>
+    </div>
+</div>
+{{/each}}
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#search").keyup(function(){
+    var value = $(this).val().toLowerCase();
+    $(".card, .mb-3").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
