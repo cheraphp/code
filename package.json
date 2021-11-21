@@ -1,29 +1,52 @@
 {
-  "name": "vCode",
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "hello-express",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node bot.js"
   },
-  "author": "barbarbar338, yashinu, alosha, Loz 'Bey",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "bookman": "^1.6.4",
-    "cookie-parser": "^1.4.5",
-    "discord.js": "^12.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^4.0.6",
-    "express-session": "^1.17.1",
-    "handlebars-helpers": "^0.10.0",
-    "passport": "^0.4.1",
-    "passport-discord": "^0.1.4",
+    "chalk": "^2.4.1",
+    "colors": "^1.3.2",
+    "common-tags": "^1.8.0",
+    "discord.js": "^11.4.2",
+    "discord.js-commando": "^0.10.0",
+    "express": "^4.16.4",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-binaries": "^4.0.0",
+    "figlet": "^1.2.1",
+    "fs": "^0.0.2",
+    "g-image-search": "^1.0.2",
+    "jimp": "^0.5.4",
+    "js-base64": "^2.4.9",
+    "kratos": "^2.3.3",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "node-opus": "^0.3.0",
     "path": "^0.12.7",
-    "random-string": "^0.2.0",
-    "url": "^0.11.0"
+    "quick-db": "^1.0.5",
+    "quick.db": "^6.3.2",
+    "request": "^2.88.0",
+    "server.js": "^1.0.0",
+    "simple-youtube-api": "^5.1.0",
+    "snekfetch": "^4.0.4",
+    "sqlite": "^3.0.0",
+    "superagent": "^4.0.0-beta.5",
+    "ytdl-core": "^0.26.3",
+    "randomstring": "^1.1.5",
+    "weather-js": "^2.0.0",
+    "gifencoder": "^1.1.0",
+    "google": "^2.1.0"
   },
   "engines": {
-    "node": "12.x"
+    "node": "10.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
   },
   "license": "MIT",
   "keywords": [
